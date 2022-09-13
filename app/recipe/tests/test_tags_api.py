@@ -18,7 +18,7 @@ class PublicTagsApiTests(TestCase):
     def setUp(self) -> None:
         self.client = APIClient()
 
-    def test_logib_required(self):
+    def test_login_required(self):
         """Test that login is required for geting tags"""
         res = self.client.get(TAGS_URL)
 
